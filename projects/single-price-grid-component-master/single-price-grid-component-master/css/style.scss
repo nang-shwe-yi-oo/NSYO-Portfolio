@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+$Cyan: hsl(179, 62%, 43%);
+$Bright-Yellow: hsl(71, 73%, 54%);
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+$White:#fff;
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: $Light-Gray;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-container{
+        background-color: aquamarine;
+        width: 600px;
+        height: 400px;
+        .card-1{
+            background-color:$White ;
+            width: 100%;
+            height: 200px;
+            header{
+                color: $Cyan;
+                font-size: 20px;
+                padding: 2rem 2rem;
+
+            }
+            h3{
+                color: $Bright-Yellow;
+                padding: 0rem 2rem;
+            }
+            p{
+                color: $Grayish-Blue;
+                padding: 0.5rem 2rem;
+                line-height: 1.5;
+            }
+            
+        }
+        .card-2{
+            width: 50%;
+            height: 200px;
+            background-color: $Cyan;
+            
+            h4{
+                color: $White;
+                padding: 1.5rem 2rem;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            h2{
+                padding: 0 2rem;
+                color: $White;
+                font-size: 32px;
+                span{
+                    font-size: 15px;
+                    font-weight: 200;
+                }
+            }
+            p{
+                padding: 0 2rem;
+                color: #fff;
+                font-size: 15px;
+            }
+            button{
+                margin: 1rem 2rem;
+                padding: 0.8rem 5.5rem;
+                background-color: $Bright-Yellow;
+                color: $White;
+                border: none;
+                border-radius: 10px;
+            }
+
+        }
+        .card-3{
+            width: 50%;
+            background-color: lighten($color: $Cyan, $amount: 10%);
+            color: #fff;
+           
+            h5{
+                padding: 1.5rem 2rem;
+                font-size: 18px;
+                font-weight: 600;
+            }
+            p{
+                padding: 0 2rem;
+                font-size: 14px;
+            }
+
+        }
+    }
+}
+
+

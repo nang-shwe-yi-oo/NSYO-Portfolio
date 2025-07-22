@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 992px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  background-color: hsl(221, 100%, 96%);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .container .card-container {
+    width: 560px;
+    height: 350px;
+    flex-direction: row;
+  }
+}
+.container .card-container .card-1 {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+  justify-items: center;
+  border-radius: 10px;
+  height: 300px;
+}
+@media (min-width: 992px) {
+  .container .card-container .card-1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 350px;
+  }
+}
+.container .card-container .card-1 h3 {
+  margin: 1.5rem 3rem;
+  color: hsl(241, 100%, 89%);
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .container .card-container .card-1 h3 {
+    margin: 2rem 3rem;
+  }
+}
+.container .card-container .card-1 .circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  background-image: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .card-container .card-1 .circle h1 {
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 0.3rem;
+}
+.container .card-container .card-1 .circle h5 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 20px;
+}
+.container .card-container .card-1 h2 {
+  color: hsl(241, 100%, 89%);
+}
+.container .card-container .card-1 p {
+  margin: 0.5rem 1.3rem;
+  font-size: 18px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .container .card-container .card-1 p {
+    font-size: 15px;
+  }
+}
+.container .card-container .card-2 {
+  min-width: 100%;
+  padding: 2rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 992px) {
+  .container .card-container .card-2 {
+    flex-basis: 50%;
+    min-width: 50%;
+    height: 350px;
+  }
+}
+.container .card-container .card-2 h2 {
+  padding-bottom: 1rem;
+}
+.container .card-container .card-2 .list-container {
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  background-color: transparent;
+}
+.container .card-container .card-2 .list-container .reaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  background-color: hsl(0, 100%, 97%);
+  border-radius: 10px;
+}
+.container .card-container .card-2 .list-container .reaction .img-container {
+  display: flex;
+}
+.container .card-container .card-2 .list-container .reaction .img-container img {
+  width: 25%;
+}
+.container .card-container .card-2 .list-container .reaction .img-container p {
+  color: hsl(0, 100%, 67%);
+}
+.container .card-container .card-2 .list-container .memory {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: hsl(39, 100%, 96%);
+}
+.container .card-container .card-2 .list-container .memory .img-container {
+  display: flex;
+}
+.container .card-container .card-2 .list-container .memory .img-container p {
+  color: hsl(39, 100%, 56%);
+}
+.container .card-container .card-2 .list-container .verbal {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: hsl(166, 100%, 92%);
+}
+.container .card-container .card-2 .list-container .verbal .img-container {
+  display: flex;
+}
+.container .card-container .card-2 .list-container .verbal .img-container p {
+  color: hsl(166, 100%, 37%);
+}
+.container .card-container .card-2 .list-container .visual {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  border-radius: 10px;
+  background-color: hsl(234, 85%, 95%);
+}
+.container .card-container .card-2 .list-container .visual .img-container {
+  display: flex;
+}
+.container .card-container .card-2 .list-container .visual .img-container p {
+  color: hsl(234, 85%, 45%);
+}
+.container .card-container .card-2 button {
+  width: 100%;
+  padding: 0.8rem 0;
+  background-color: hsl(224, 30%, 27%);
+}/*# sourceMappingURL=style.css.map */

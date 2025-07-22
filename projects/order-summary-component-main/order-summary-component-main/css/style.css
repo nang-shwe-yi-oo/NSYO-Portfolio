@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+body {
+  background-color: hsl(225, 100%, 94%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  width: 350px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.container .card img {
+  width: 350px;
+  height: 40%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.container .card .summary {
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .card p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.container .card .btn {
+  width: 300px;
+  padding: 0 2rem;
+  margin: 0 1rem;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card .btn .img-container {
+  display: flex;
+  justify-content: left;
+}
+.container .card .btn .img-container img {
+  width: 40px;
+  margin-right: 0.5rem;
+}
+.container .card .btn .img-container h4 {
+  text-align: center;
+}
+.container .card .btn .img-container h4 span {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+.container .card button {
+  margin: 1rem 2rem;
+  padding: 0.5rem 4.5rem;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

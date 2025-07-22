@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+$Light-red: hsl(0, 100%, 67%);
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Green-teal: hsl(166, 100%, 37%);
+$Cobalt-blue: hsl(234, 85%, 45%);
+$Light-slate-blue: hsl(252, 100%, 67%);
+$Light-royal-blue : hsl(241, 81%, 54%);
+$Violet-blue : hsla(256, 72%, 46%, 1);
+$Persian-blue : hsla(241, 72%, 46%, 0);
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+$Responsive-Width:992px;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    @media (min-width:$Responsive-Width){
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+}
+body{
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: $Pale-blue;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card-container{
+       width: 100%;
+       height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // grid-template-columns: repeat(2,1fr);
+        // grid-template-rows: 350px;
+       @media (min-width:$Responsive-Width){
+        width: 560px;
+        height: 350px;
+        flex-direction: row;
+       }
+       
+        .card-1{
+            background-image: linear-gradient($Light-slate-blue,$Light-royal-blue);
+            text-align: center;
+            justify-items: center;
+            border-radius: 10px;
+            // flex-basis: 50%;
+            height: 300px;
+            @media (min-width:$Responsive-Width){
+                display: inline-block;
+                vertical-align: top;
+                width: 50%;
+                // width: 230px;
+                height: 350px;
+                
+            }
+            
+            h3{
+                margin: 1.5rem 3rem;
+                color: $Light-lavender;
+                text-align: center;
+                @media (min-width:$Responsive-Width){
+                    margin: 2rem 3rem;
+                }
+            }
+            .circle{
+                
+                width: 120px;
+                height: 120px;
+                // border: 20px solid transparent;
+                border-radius: 100%;
+                background-image: linear-gradient($Violet-blue,$Persian-blue);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h1{
+                    color: $White;
+                    padding-bottom: 0.3rem;
+                }
+                h5{
+                    color: $White;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+            h2{
+             color: $Light-lavender;
+            }
+            p{
+                margin: 0.5rem 1.3rem;
+                font-size: 18px;
+                color: $White;
+                font-weight: 300;
+                @media (min-width:$Responsive-Width){
+                    font-size: 15px;
+                }
+            }
+
+        }
+        .card-2{
+            min-width: 100%;
+            // flex-basis: 50%;
+            padding: 2rem;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius:10px ;
+            background-color: $White;
+            
+            
+
+            @media (min-width:$Responsive-Width){
+                flex-basis: 50%;
+                min-width: 50%;
+                height: 350px;
+            }
+            h2{
+                padding-bottom: 1rem;
+            }
+            .list-container{
+                width: 100%;
+                display: grid;
+                // padding: 1rem ;
+                gap: 1rem;
+                background-color: transparent;
+                .reaction{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0.7rem;
+                    background-color: lighten($color: $Light-red, $amount: 30%);
+                    border-radius: 10px;
+                    .img-container{
+                    display: flex;
+
+                   
+                        img{
+                            width: 25%;
+                        }
+                        p{
+                            color: $Light-red;
+                        }
+                    }
+                    h4{
+
+                    }
+
+                }
+                .memory{
+                    display: flex;
+                    justify-content: space-between; 
+                    padding: 0.7rem;
+                    border-radius: 10px;
+                    background-color: lighten($color: $Orangey-yellow, $amount: 40%);                  
+                    .img-container{
+                        display: flex;
+                        img{
+
+                        }
+                        p{
+                            color: $Orangey-yellow;
+                        }
+                    }
+                    h4{
+                        
+                    }
+
+                }
+                .verbal{
+                    
+                    display: flex;
+                    justify-content: space-between; 
+                    padding: 0.7rem;
+                    border-radius: 10px;
+                    background-color: lighten($color: $Green-teal, $amount: 55%);          
+                   .img-container{
+                    display: flex;
+                        img{
+
+                        }
+                        p{
+                            color: $Green-teal;
+                        }
+                    }
+                    h4{
+                        
+                    }
+
+                }
+                .visual{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0.7rem;
+                    border-radius: 10px;
+                    background-color: lighten($color: $Cobalt-blue, $amount: 50%);
+                   .img-container{
+                    display: flex;
+                        img{
+
+                        }
+                        p{
+                            color: $Cobalt-blue;
+                        }
+                    }
+                    h4{
+                        
+                    }
+                }
+            
+            }
+            button{
+                width: 100%;
+                padding: 0.8rem 0;
+                background-color: $Dark-gray-blue;
+                
+            }
+            
+                // margin-bottom:0.8rem ;
+                // border-radius: 10px;
+                // border: none;
+                // display: flex;
+                // justify-content: space-between;
+                // align-items: center;
+                // width: 100%;
+                // height: 50px;
+
+                // @media (min-width:$Responsive-Width){
+                //     width: 180px;
+                //     height: 40px;
+                // }
+
+               
+               
+            //     .img-container{
+            //         display: flex;
+            //         img{
+            //             margin-right: 5px;
+            //         }
+            //         p{
+            //             font-size: 15px;
+            //         }
+            //     }
+            //     h4{
+            //      color: black;
+            //     }
+            // }
+            // .btn{
+            //     margin-left: 1rem;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     width: 330px;
+            //     height: 45px;
+            //     border: 2px solid $Dark-gray-blue;
+            //     border: none;
+            //     background-color: $Dark-gray-blue;
+            //     color: $White;
+            //     border-radius: 10px;
+            //     @media (min-width:$Responsive-Width){
+            //         width: 180px;
+            //         height: 40px;
+            //     }
+            }
+
+        }
+    }

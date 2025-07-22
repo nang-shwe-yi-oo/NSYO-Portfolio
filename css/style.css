@@ -1,0 +1,113 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+  color: #1c1c1c;
+}
+
+h1, h2, h5 {
+  font-weight: 700;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #ec96f5, #c3c618);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .nav-link {
+  color: white !important;
+  transition: color 0.3s;
+}
+.navbar .nav-link:hover {
+  color: #c3c618 !important;
+}
+
+#introduction {
+  background: linear-gradient(135deg, #ec96f5, #c3c618);
+  color: white;
+  padding: 80px 0;
+}
+#introduction .profile-img {
+  width: 160px;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+#introduction .profile-img:hover {
+  transform: scale(1.05);
+}
+#introduction p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+#projects {
+  background-color: white;
+  padding: 70px 0;
+}
+#projects .project-card {
+  border: none;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+#projects .project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+#projects .project-card .card-img-top {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#projects .project-card .btn-primary {
+  background: linear-gradient(135deg, #ec96f5, #c3c618);
+  border: none;
+}
+#projects .project-card .btn-primary:hover {
+  background: #c3c618;
+}
+
+#social {
+  background: #1c1c1c;
+  color: white;
+  padding: 60px 0;
+}
+#social h2 {
+  color: #c3c618;
+}
+#social .btn {
+  border-radius: 25px;
+  transition: transform 0.2s ease;
+}
+#social .btn:hover {
+  transform: scale(1.1);
+}
+
+#skills {
+  background: #f7f7f7;
+}
+#skills .list-group-item {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+}
+#skills .progress {
+  height: 12px;
+  border-radius: 10px;
+  background-color: #ddd;
+}
+#skills .progress .progress-bar {
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ec96f5, #c3c618);
+}
+
+footer {
+  background: linear-gradient(135deg, #ec96f5, #c3c618);
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=style.css.map */

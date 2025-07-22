@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+
+body{
+    background-color: $Pale-blue;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card{
+        width: 350px;
+        height: 500px;
+        background-color: #fff;
+        border-radius: 10px;
+        img{
+            width: 350px;
+            height: 40%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .summary{
+            padding: 1rem 0;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .btn{
+            width: 300px;
+            padding: 0 2rem;
+            margin: 0 1rem;
+            background-color: $Very-pale-blue;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .img-container{
+                display: flex;
+                justify-content: left;
+                img{
+                    width: 40px;
+                    margin-right: 0.5rem;
+                }
+                h4{
+                    text-align: center;
+                    span{
+                         display: flex;
+                    flex-wrap: wrap-reverse;
+                    }
+                }
+                
+            }
+            h5{ 
+                // display: flex;
+                // justify-content: flex-end;
+                
+            }
+        }
+        button{
+            margin: 1rem 2rem;
+            padding: 0.5rem 4.5rem;
+            background-color: $Bright-blue;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+        }
+        p{
+
+        }
+    }
+}

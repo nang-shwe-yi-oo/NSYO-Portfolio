@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card {
+  width: 250px;
+  height: 400px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 8px;
+}
+.container .card .img-container {
+  justify-items: center;
+  padding-top: 1rem;
+  line-height: 1.7;
+}
+.container .card .img-container img {
+  width: 70px;
+  border-radius: 100%;
+}
+.container .card .img-container h2 {
+  color: #fff;
+}
+.container .card .img-container h4 {
+  color: hsl(75, 94%, 57%);
+}
+.container .card .img-container h5 {
+  color: #fff;
+}
+.container .card button {
+  border-radius: 5px;
+  width: 100%;
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+  display: flex;
+  margin: 0.4rem 0;
+  justify-content: center;
+  padding: 0.3rem 4.5rem;
+  border: none;
+}
+.container .card button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}/*# sourceMappingURL=style.css.map */

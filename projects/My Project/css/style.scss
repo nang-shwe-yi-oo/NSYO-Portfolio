@@ -1,0 +1,29 @@
+$bg-color: #0d0d0d;
+$clock-bg: #1c1c1c;
+$text-color: #00ffff;
+$font-stack: 'Courier New', monospace;
+$box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+
+body {
+  background-color: $bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: $font-stack;
+
+  .clock-container {
+    padding: 40px 60px;
+    background: $clock-bg;
+    border-radius: 12px;
+    box-shadow: $box-shadow;
+
+    #clock {
+      color: $text-color;
+      font-size: 40px;
+      letter-spacing: 5px;
+    }
+  }
+}
+
